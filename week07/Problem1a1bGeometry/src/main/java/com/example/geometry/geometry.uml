@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.geometry</OriginalElement>
+  <nodes>
+    <node x="-24.0" y="320.0">com.example.geometry.Line</node>
+    <node x="281.0" y="303.0">com.example.geometry.Rectangle</node>
+    <node x="90.62500000000001" y="0.0">com.example.geometry.Point</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.geometry.Rectangle" target="com.example.geometry.Point" relationship="CREATE">
+      <point x="56.75" y="-171.0" />
+      <point x="451.25" y="218.0" />
+      <point x="298.5" y="218.0" />
+      <point x="298.5" y="208.0" />
+      <point x="247.375" y="208.0" />
+      <point x="52.25" y="94.0" />
+    </edge>
+    <edge source="com.example.geometry.Line" target="com.example.geometry.Point" relationship="TO_ONE">
+      <point x="-40.0" y="-138.0" />
+      <point x="16.0" y="228.0" />
+      <point x="75.0" y="228.0" />
+      <point x="75.0" y="208.0" />
+      <point x="142.875" y="208.0" />
+      <point x="-52.25" y="94.0" />
+    </edge>
+    <edge source="com.example.geometry.Rectangle" target="com.example.geometry.Point" relationship="TO_ONE">
+      <point x="-56.75" y="-171.0" />
+      <point x="337.75" y="228.0" />
+      <point x="75.0" y="228.0" />
+      <point x="75.0" y="208.0" />
+      <point x="142.875" y="208.0" />
+      <point x="-52.25" y="94.0" />
+    </edge>
+    <edge source="com.example.geometry.Line" target="com.example.geometry.Point" relationship="CREATE">
+      <point x="40.0" y="-138.0" />
+      <point x="96.0" y="218.0" />
+      <point x="298.5" y="218.0" />
+      <point x="298.5" y="208.0" />
+      <point x="247.375" y="208.0" />
+      <point x="52.25" y="94.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="203.5" y="295.0" />
+  <SelectedNodes>
+    <node>com.example.geometry.Rectangle</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
