@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="620.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newgametest.HelloController">
+    <children>
+        <GridPane layoutX="-181.0" layoutY="-48.0" prefHeight="600.0" prefWidth="827.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="549.0" minWidth="10.0" prefWidth="480.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="426.0" minWidth="10.0" prefWidth="382.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="420.0" minHeight="10.0" prefHeight="418.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="325.0" minHeight="0.0" prefHeight="202.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="btnKozove" mnemonicParsing="false" onAction="#btnKozoveOnActionHandler" prefHeight="25.0" prefWidth="384.0" text="Тройка козове KING, QUEEN и JACK">
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" right="15.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnKozove2" mnemonicParsing="false" onAction="#btnKozove2OnActionHandler" prefHeight="25.0" prefWidth="390.0" text="Има козове ACE и JACK">
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" top="30.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnKrai" mnemonicParsing="false" onAction="#btnKraiOnActionHandler" prefHeight="25.0" prefWidth="381.0" text="Край">
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" top="30.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+                <Label fx:id="lblKoz" prefHeight="39.0" prefWidth="258.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="10.0" top="-325.0" />
+                    </GridPane.margin>
+                </Label>
+                <Button fx:id="btnTegli" mnemonicParsing="false" onAction="#btnTegliOnActionHandler" prefHeight="25.0" prefWidth="460.0" text="Изтегли ръка от карти" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="5.0" right="5.0" top="-250.0" />
+                    </GridPane.margin>
+                </Button>
+            </children>
+        </GridPane>
+        <GridPane prefHeight="620.0" prefWidth="506.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="348.0" minHeight="10.0" prefHeight="336.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="224.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="224.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextArea fx:id="txtGore" prefHeight="329.0" prefWidth="506.0">
+                    <GridPane.margin>
+                        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+                    </GridPane.margin>
+                </TextArea>
+                <TextArea fx:id="txtDolu" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+                    </GridPane.margin>
+                </TextArea>
+                <Label fx:id="lblTochki" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="28.0" />
+                    </GridPane.margin>
+                </Label>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
